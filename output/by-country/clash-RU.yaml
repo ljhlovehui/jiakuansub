@@ -5,73 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 172.64.42.85
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.64.229.2
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 162.159.45.19
+  server: 104.18.34.14
   port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 172.67.158.158
-  port: 443
-  udp: true
-  type: trojan
-  password: Siw3_iSte@ulOTO,-
-  sni: 4zgcCBcB10PQYIbnWMM4nvznJ4.rOyAEhmAn5.WorKers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/3BEU3jR06ZEdPc6FBekHFztK?ed=2560
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 104.18.32.47
-  port: 2087
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 5.129.238.144
+  port: 8443
   udp: true
   type: vless
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  servername: xinnusvpn.duckdns.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /game
+    path: /wsnl
     headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 91.240.86.70
-  port: 22443
+      Host: xinnusvpn.duckdns.org
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 46.8.200.91
   port: 443
   udp: true
@@ -85,6 +56,14 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,8 +74,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,7 +84,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
