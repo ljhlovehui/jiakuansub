@@ -33,7 +33,7 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 144.31.131.38
+  server: 2.59.253.251
   port: 443
   udp: true
   type: vless
@@ -43,16 +43,16 @@ proxies:
   reality-opts:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
-  servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
+  servername: nvidia.com
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: admin.wwwinternetvideo.click
+  server: 45.192.12.93
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 144.31.171.108
   port: 8444
@@ -90,17 +90,6 @@ proxies:
   servername: pl6.moritech.net
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  server: 144.31.2.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,7 +103,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,6 +116,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
   - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
