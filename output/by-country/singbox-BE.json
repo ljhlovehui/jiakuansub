@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇬 KG 01 - xiaohe",
-      "server": "172.66.44.211",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "113.30.152.2",
+      "server_port": 443,
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "wk1.f1w.de5.net",
-        "insecure": false,
+        "server_name": "be-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "wk1.f1w.de5.net"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇬 KG 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇬 KG 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
